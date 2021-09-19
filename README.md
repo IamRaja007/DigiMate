@@ -10,7 +10,7 @@ Introducing _DigiMate_, an online class managing app. One can find almost everyt
 
  * _DigiMate_ also has a **Profile section** in which, the user can see its profile details. If student logins, he can see his profile along with his </br>assigned proctor. And if Faculty logins, then they can see their profile details along with the students that are under their mentorship.
 
-
+![alt text](https://github.com/IamRaja007/DigiMate/blob/master/digi_main.png)
 
 ## Frontend
 Android app, made by **_Raja Bhandari_**.
