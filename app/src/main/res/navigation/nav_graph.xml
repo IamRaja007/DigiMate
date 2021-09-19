@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/attendanceFragment">
+    <fragment
+        android:id="@+id/attendanceFragment"
+        android:name="com.example.studentscompanion.AttendanceFragment"
+        android:label="fragment_attendance"
+        tools:layout="@layout/fragment_attendance" >
+        <action
+            android:id="@+id/action_attendanceFragment_to_seeAttendenceFragment"
+            app:destination="@id/seeAttendenceFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/learningFragment"
+        android:name="com.example.studentscompanion.LearningFragment"
+        android:label="fragment_learning"
+        tools:layout="@layout/fragment_learning" >
+        <action
+            android:id="@+id/action_learningFragment_to_addDocFragment"
+            app:destination="@id/addDocFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/proctoringFragment"
+        android:name="com.example.studentscompanion.ProctoringFragment"
+        android:label="fragment_proctoring"
+        tools:layout="@layout/fragment_proctoring" >
+        <action
+            android:id="@+id/action_proctoringFragment_to_seeStudentProfileFragment"
+            app:destination="@id/seeStudentProfileFragment" />
+        <action
+            android:id="@+id/action_proctoringFragment_to_addQueryFragment"
+            app:destination="@id/addQueryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.studentscompanion.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/seeAttendenceFragment"
+        android:name="com.example.studentscompanion.SeeAttendenceFragment"
+        android:label="fragment_see_attendence"
+        tools:layout="@layout/fragment_see_attendence" >
+        <argument
+            android:name="id"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/seeStudentProfileFragment"
+        android:name="com.example.studentscompanion.SeeStudentProfileFragment"
+        android:label="fragment_see_student_profile"
+        tools:layout="@layout/fragment_see_student_profile" >
+        <argument
+            android:name="id"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/addQueryFragment"
+        android:name="com.example.studentscompanion.AddQueryFragment"
+        android:label="fragment_add_query"
+        tools:layout="@layout/fragment_add_query" />
+    <fragment
+        android:id="@+id/addDocFragment"
+        android:name="com.example.studentscompanion.AddDocFragment"
+        android:label="fragment_add_doc"
+        tools:layout="@layout/fragment_add_doc" />
+</navigation>

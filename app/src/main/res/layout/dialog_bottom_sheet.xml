@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="30dp">
+
+    <TextView
+        android:id="@+id/tvShowFieldNameBottomSheet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Topic Name"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/nunito_sans_regular"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/etBottomSheetClassName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter topic"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:paddingEnd="20dp"/>
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Meeting Link"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/nunito_sans_regular"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/etBottomSheetMeetingLink"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter link"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:paddingEnd="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Time of Meeting"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/nunito_sans_regular"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/etBottomSheetMeetingTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter time"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:paddingEnd="20dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="end">
+        <Button
+            android:id="@+id/btnBottomSheetCreate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create"
+            android:layout_weight="1"
+            android:layout_marginEnd="10dp"
+            />
+
+        <Button
+            android:id="@+id/btnBottomSheetCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="cancel"
+            android:layout_weight="1"
+            android:layout_marginEnd="10dp" />
+    </LinearLayout>
+
+
+</LinearLayout>

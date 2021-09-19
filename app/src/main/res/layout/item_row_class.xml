@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="10dp"
+    app:cardCornerRadius="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:id="@+id/LLFacultyName"
+            android:layout_width="wrap_content"
+            app:layout_constraintHorizontal_bias="0"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Faculty name: "
+                android:fontFamily="@font/nunito_sans_regular"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/tvFacultyName"
+                android:text="KG MONDAL"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/nunito_sans_extra_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LLTopic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/LLFacultyName"
+            app:layout_constraintVertical_bias="0"
+            app:layout_constraintStart_toStartOf="@id/LLFacultyName">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Subject name: "
+                android:fontFamily="@font/nunito_sans_regular"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/tvTopic"
+                android:text="Biology"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/nunito_sans_extra_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LLClassDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/LLTopic"
+            app:layout_constraintStart_toStartOf="@id/LLTopic">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Class date: "
+                android:fontFamily="@font/nunito_sans_regular"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/tvDate"
+                android:text="23rd September,2021"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/nunito_sans_extra_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LLClassTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/LLClassDate"
+            app:layout_constraintTop_toBottomOf="@id/LLClassDate">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Class time: "
+                android:fontFamily="@font/nunito_sans_regular"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/tvTime"
+                android:text="12:00 am"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/nunito_sans_extra_bold"/>
+
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnJoinClass"
+            android:layout_width="300dp"
+            android:layout_height="58dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@color/deep_blue"
+            android:fontFamily="@font/poppins_bold"
+            android:gravity="center|center_vertical|center_horizontal"
+            android:text="Join Class"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            app:layout_constraintTop_toBottomOf="@id/LLClassTime"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnGetAttendence"
+            android:layout_width="300dp"
+            android:layout_height="58dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:visibility="gone"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@color/deep_blue"
+            android:fontFamily="@font/poppins_bold"
+            android:gravity="center|center_vertical|center_horizontal"
+            android:text="Get Attendence "
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            app:layout_constraintTop_toBottomOf="@id/LLClassTime"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

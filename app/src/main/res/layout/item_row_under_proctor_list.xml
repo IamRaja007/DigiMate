@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="4dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_margin="15dp">
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/civUnderStudent"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            app:shapeAppearanceOverlay="@style/CircleImageView_Style"
+            android:src="@drawable/default_avatar"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvUnderStudentName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bishal Mukherjee"
+                android:fontFamily="@font/nunito_sans_extra_bold"
+                android:textColor="@color/black"
+                android:layout_gravity="center_vertical"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/tvUnderStudentDepartmentName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="BCA"
+                android:fontFamily="@font/nunito_sans_regular"
+                android:layout_gravity="center_vertical"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>
